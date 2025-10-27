@@ -1,0 +1,23 @@
+* 2e78485 (HEAD -> main, origin/main) docs: Add changelog
+* 26af137 docs: Add changelog
+* 1684cb9 Git Journey Markdown Added
+* f7ef77d (tag: v1.1.0, tag: v1.0.0) docs: Update README
+| * 031a489 (feature/another-feature) Bad commit
+|/  
+| * 3b75de2 (origin/feature/another-feature) feat: Add test feature
+|/  
+* 3851ada docs: Add FAQ section
+| * 35b5b6a (origin/feature/new-feature, feature/new-feature) feat: Add new feature
+|/  
+*   d2ad6d7 merge: Resolve all conflicts between main and conflict-simulator
+|\  
+| * d3dd9b2 (instructor/conflict-simulator) updating conflict-simulator
+* |   c3cda40 merge: Resolve all conflicts between main and dev branches
+|\ \  
+| * | 02011a5 (instructor/dev, dev) updating dev
+| |/  
+* | 76f2fda Pushed to My Repository and examined the folder structure while also leaving behind a checkpoint
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit
