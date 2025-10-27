@@ -1,5 +1,6 @@
-- 1684cb9: Git Journey Markdown Added (Nikhilcharan-dev, 44 seconds ago)
-- f7ef77d: docs: Update README (Nikhilcharan-dev, 6 minutes ago)
+- 26af137: docs: Add changelog (Nikhilcharan-dev, 5 seconds ago)
+- 1684cb9: Git Journey Markdown Added (Nikhilcharan-dev, 49 seconds ago)
+- f7ef77d: docs: Update README (Nikhilcharan-dev, 7 minutes ago)
 - 3851ada: docs: Add FAQ section (Nikhilcharan-dev, 7 minutes ago)
 - d2ad6d7: merge: Resolve all conflicts between main and conflict-simulator (Nikhilcharan-dev, 8 minutes ago)
 - c3cda40: merge: Resolve all conflicts between main and dev branches (Nikhilcharan-dev, 26 minutes ago)
