@@ -25,7 +25,7 @@ merge conflicts across multiple branches using proper Git workflows.
 | git fetch | 2 | Fetch updates from instructor |
 | git pull | 1 | Pull updates |
 | git stash | 2 | Save temporary work |
-| git cherry-pick | 1 | Copy specific commit |
+| git cherry-pick | 2 | Copy specific commit |
 | git rebase | 1 | Rebase feature branch |
 | git reset | 3 | Undo commits (soft/mixed/hard) |
 | git revert | 1 | Safe undo |
@@ -82,7 +82,47 @@ merge conflicts across multiple branches using proper Git workflows.
 
 ### Merge 2: main + conflict-simulator (6 files)
 
-[Document the second set of conflicts similarly]
+#### Conflict 1: `config/app-config.yaml`
+- **Issue**: Simulator branch introduced dynamic port allocation conflicting with static port in main  
+- **Resolution**: Unified config with conditional port assignment based on environment  
+- **Strategy**: Default to static port `8080`, override with dynamic if `SIMULATOR_MODE` is enabled  
+- **Difficulty**: Medium  
+- **Time**: 14 minutes  
+
+#### Conflict 2: `config/database-config.json`
+- **Issue**: Simulator used mock DB host and disabled SSL, conflicting with production settings  
+- **Resolution**: Added `SIMULATOR_DB` profile with mock settings alongside production profile  
+- **Strategy**: Structured JSON to support multiple profiles with clear environment toggles  
+- **Difficulty**: Medium  
+- **Time**: 12 minutes  
+
+#### Conflict 3: `scripts/deploy.sh`
+- **Issue**: Simulator used local Docker deployment, main used cloud CLI  
+- **Resolution**: Added deployment mode switch using `DEPLOY_ENV=simulator|production`  
+- **Strategy**: Modularized script with separate functions for each deployment strategy  
+- **Difficulty**: Hard  
+- **Time**: 22 minutes  
+
+#### Conflict 4: `scripts/monitor.js`
+- **Issue**: Simulator used verbose logging and short intervals, main used minimal logs  
+- **Resolution**: Created config object to toggle logging level and interval based on mode  
+- **Strategy**: Used `process.env.SIMULATOR_MODE` to control behavior  
+- **Difficulty**: Medium  
+- **Time**: 16 minutes  
+
+#### Conflict 5: `docs/architecture.md`
+- **Issue**: Simulator added new flow diagrams and async event handling, main had legacy sync model  
+- **Resolution**: Merged both into a comparative architecture section  
+- **Strategy**: Created side-by-side diagrams and explained evolution from sync to async  
+- **Difficulty**: Easy  
+- **Time**: 11 minutes  
+
+#### Conflict 6: `README.md`
+- **Issue**: Simulator added new feature descriptions and versioning, main had outdated info  
+- **Resolution**: Combined all features with version labels and simulator highlights  
+- **Strategy**: Organized features by category and added simulator-specific notes  
+- **Difficulty**: Easy  
+- **Time**: 10 minutes  
 
 ## Most Challenging Parts
 
