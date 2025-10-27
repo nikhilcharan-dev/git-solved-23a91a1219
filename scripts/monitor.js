@@ -67,4 +67,4 @@ function checkSystemHealth() {
 
   console.log('System Status: HEALTHY');
 
-  // Optional: AI monitoring (disabled
+  // Optional: AI monitoring (disabled by default)
